@@ -22,7 +22,7 @@ namespace HRApplicationArApp.Controllers
         [HttpPost]
         public ViewResult Employees(Employee employee)
         {
-            Console.WriteLine(employee);
+            Repository.AddEmployee(employee);
             return View();
         }
     }

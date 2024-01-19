@@ -1,14 +1,14 @@
 @{
     ViewData["Title"] = "Add Employee";
 }
-@model Employee
+@model EmployeesRepo
 
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
 
@@ -16,12 +16,12 @@
     <h1>Employees Form</h1>   
     
     <div class="mb-3">
-        <label class="form-label" asp-for="EmployeeName">Employee Name</label>
-        <input class="form-control" type="text" asp-for="EmployeeName">
+        <label class="form-label" asp-for="Employee.EmployeeName">Employee Name</label>
+        <input class="form-control" type="text" asp-for="Employee.EmployeeName">
     </div>
     <div class="mb-3">
-        <label class="form-label" asp-for="Department">Department</label>
-        <select class="form-select" aria-label="select department" asp-for="Department">
+        <label class="form-label" asp-for="Employee.Department">Department</label>
+        <select class="form-select" aria-label="select department" asp-for="Employee.Department">
             <option value="IT">IT</option>
             <option value="Operations">Operations</option>
             <option value="HR">HR</option>
@@ -29,8 +29,8 @@
         </select>
     </div>
     <div class="mb-3">
-        <label class="form-check-label " asp-for="isActive">is Active ? </label>
-        <input class="form-check-input mx-2" type="checkbox" asp-for="isActive">
+        <label class="form-check-label " asp-for="Employee.isActive">is Active ? </label>
+        <input class="form-check-input mx-2" type="checkbox" asp-for="Employee.isActive">
     </div>
     <div>
         <button type="submit" class="btn btn-primary mb-3">
@@ -38,5 +38,34 @@
         </button>
     </div>
 </form>
+
+<div class="mt-4">
+    <h3>All Employees</h3>
+    
+    <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Dep</th>
+              <th scope="col">Active</th>
+            </tr>
+          </thead>
+          <tbody>
+          @foreach (var employee in Repository.GetEmployees())
+          {
+              <tr>
+                  <th scope="row">1</th>
+                  <td>@employee.EmployeeName</td>
+                  <td>@employee.Department</td>
+                  <td>@employee.isActive</td>
+              </tr>
+
+          }
+
+          </tbody>
+        </table>
+</div>
 </body>
 </html>
+

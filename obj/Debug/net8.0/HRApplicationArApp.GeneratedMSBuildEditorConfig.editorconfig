@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/amr/Desktop/DotNET/HRApplicationAR
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/amr/Desktop/DotNET/HRApplicationAR/Views/Home/AllEmployees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BbGxFbXBsb3llZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/amr/Desktop/DotNET/HRApplicationAR/Views/Home/Confirmition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db25maXJtaXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/amr/Desktop/DotNET/HRApplicationAR/Views/Home/Employees.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FbXBsb3llZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

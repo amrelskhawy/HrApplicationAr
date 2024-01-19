@@ -4,8 +4,13 @@ public class Repository
 {
     private static List<Employee> EmployeesList = new List<Employee>();
 
-    private static IEnumerable<Employee> getEmployees()
+    public static IEnumerable<Employee> GetEmployees()
     {
         return EmployeesList;
+    }
+
+    public static void AddEmployee(Employee employee)
+    {
+        EmployeesList.Add(employee);
     }
 }

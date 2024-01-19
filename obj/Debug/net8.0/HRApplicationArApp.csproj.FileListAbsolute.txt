@@ -28,3 +28,4 @@
 /home/amr/Desktop/DotNET/HRApplicationAR/obj/Debug/net8.0/HRApplicationArApp.pdb
 /home/amr/Desktop/DotNET/HRApplicationAR/obj/Debug/net8.0/HRApplicationArApp.genruntimeconfig.cache
 /home/amr/Desktop/DotNET/HRApplicationAR/obj/Debug/net8.0/ref/HRApplicationArApp.dll
+/home/amr/Desktop/DotNET/HRApplicationAR/obj/Debug/net8.0/HRApplicationArApp.sourcelink.json
