@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Add Employee";
+}
+@model Employee
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+
+<form class="" method="post" asp-action="Employees">
+    <h1>Employees Form</h1>   
+    
+    <div class="mb-3">
+        <label class="form-label" asp-for="EmployeeName">Employee Name</label>
+        <input class="form-control" type="text" asp-for="EmployeeName">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Department">Department</label>
+        <select class="form-select" aria-label="select department" asp-for="Department">
+            <option value="IT">IT</option>
+            <option value="Operations">Operations</option>
+            <option value="HR">HR</option>
+            <option value="Marketing">Marketing</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-check-label " asp-for="isActive">is Active ? </label>
+        <input class="form-check-input mx-2" type="checkbox" asp-for="isActive">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary mb-3">
+            Add Employee
+        </button>
+    </div>
+</form>
+</body>
+</html>
